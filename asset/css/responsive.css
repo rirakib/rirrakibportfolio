@@ -1,0 +1,30 @@
+@media screen and (max-width:765px){
+    .container{
+        padding-left: 0;
+    }
+    header h1{
+        font-size:35px;
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .side_bar{
+        left:-100%;
+    }
+    .toggle_btn_active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        transition: 0.4s ease-in-out all;
+    }
+    .toggle_btn_active .bar:nth-child(2){
+        display: none;
+        transition: 0.4s ease-in-out all;
+    }
+    .toggle_btn_active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        transition: 0.4s ease-in-out all;
+    }
+    .sideBarActive{
+        left:0;
+        transition: 0.4s ease-in-out;
+    }
+}
